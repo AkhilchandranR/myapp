@@ -1,0 +1,37 @@
+.homeContent{
+    background-image: url("../images/61305e71313e0.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    background-color: rosybrown;
+    height: 96vh;
+    width: 98vw;
+    display: grid;
+    place-items: center ;
+}
+.homeContent__title{
+    color: white;
+}
+.homeContent__title > h1{
+    font-size: 3em;
+    text-align: center;
+}
+.homeContent__title > p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+.homeContent__title > button{
+    margin-top: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: transparent;
+    color: lightgray;
+    margin-left: 15vw;
+}

@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95vw;
+    padding: 20px;
+    position: fixed;
+    color: white;
+}
+.header__menu > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35vw;
+    list-style-type: none;
+    margin-right: 10px;
+    font-weight: 700;
+    color: white;
+}
