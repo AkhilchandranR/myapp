@@ -7,7 +7,9 @@ function HomeContent() {
             <div className="homeContent__title">
             <h1>Full Stack Developer</h1>
             <p>Turn your ideas into a reality..</p> 
-            <button>Contact Me >></button>
+            <div className="homeContent__contact">
+                <button>Contact Me</button>
+            </div>
             </div>
         </div>
     )

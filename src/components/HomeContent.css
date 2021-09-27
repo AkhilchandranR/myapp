@@ -6,8 +6,8 @@
     overflow: hidden;
     backdrop-filter: blur(5px);
     background-color: rosybrown;
-    height: 96vh;
-    width: 98vw;
+    height: 100vh;
+    width: 100vw;
     display: grid;
     place-items: center ;
 }
@@ -24,7 +24,13 @@
     margin-top: 15px;
     font-weight: 500;
 }
-.homeContent__title > button{
+.homeContent__contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.homeContent__contact > button{
     margin-top: 25px;
     padding: 10px 20px;
     font-size: 18px;
@@ -33,5 +39,4 @@
     border-radius: 5px;
     background: transparent;
     color: lightgray;
-    margin-left: 15vw;
 }

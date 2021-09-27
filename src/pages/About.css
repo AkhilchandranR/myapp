@@ -1,0 +1,29 @@
+.about__heading{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 3px;
+    margin-bottom: 50px;
+}
+.about__content{
+    background: black;
+    color: white;
+    padding: 30px;
+}
+.about__description{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+}
+.about__description > h3{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.about__description > p{
+    font-size: 1.7rem;
+    line-height: 50px;
+    margin-top: 40px;
+}
+
