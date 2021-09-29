@@ -8,7 +8,7 @@ function Areas() {
     return (
         <div className="areas">
             <div className="areas__heading">
-                <h1>AREAS OF INTEREST</h1>
+                <h1>SERVICES</h1>
             </div>
             <div className="areas__cardarea">
             <div className="areas__card">

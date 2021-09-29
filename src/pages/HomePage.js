@@ -3,7 +3,7 @@ import './HomePage.css';
 import Header from '../components/Header';
 import HomeContent from '../components/HomeContent';
 import Areas from '../components/Areas';
-import About from './About';
+import Footer from '../components/Footer';
 
 function HomePage() {
     return (
@@ -11,7 +11,7 @@ function HomePage() {
             <Header/>
             <HomeContent/>
             <Areas/>
-            <About/>
+            <Footer/>
         </div>
     )
 }

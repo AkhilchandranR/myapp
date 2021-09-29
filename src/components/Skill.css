@@ -1,0 +1,14 @@
+.skill > img{
+    width: 80px;
+    object-fit: contain;
+}
+.skill{
+    border: 1px solid grey;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.skill > p{
+    text-align: center;
+}
