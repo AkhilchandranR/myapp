@@ -1,0 +1,19 @@
+.project{
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.project__image > img{
+    height: 150px;
+    object-fit: contain;
+}
+.project__color{
+    width: 30px;
+    height: 150px;
+    background-color: blue;
+}
+.project__description{
+    margin-left: 15px;
+}

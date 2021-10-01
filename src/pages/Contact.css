@@ -1,0 +1,40 @@
+.contact{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.contact__body{
+    display: flex;
+    align-items: center;
+    width: 75vw;
+}
+.contact__about{
+    flex: 0.5;
+    background-color: #1b1c23;
+    color: whitesmoke;
+    padding: 100px 40px;
+}
+.contact__about > h2{
+    margin-bottom: 5px;
+}
+.contact__about > h5{
+    margin-bottom: 30px;
+}
+.contact__form{
+    flex: 0.5;
+    padding: 40px;
+}
+.contact__form > form{
+    display: flex;
+    flex-direction: column;
+}
+.contact__form > form > input,textarea{
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+.contact__form > h2{
+    margin-bottom: 20px;
+}

@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import HomeContent from '../components/HomeContent';
 import Areas from '../components/Areas';
 import Footer from '../components/Footer';
+import Projects from './Projects';
 
 function HomePage() {
     return (
@@ -11,6 +12,7 @@ function HomePage() {
             <Header/>
             <HomeContent/>
             <Areas/>
+            <Projects/>
             <Footer/>
         </div>
     )
