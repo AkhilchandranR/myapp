@@ -8,9 +8,7 @@ function Header() {
             <div className="header__menu">
                 <ul>
                     <li>Home</li>
-                    <li>About</li>
                     <li>Skills</li>
-                    <li>Projects</li>
                     <li>Contact</li>
                 </ul>
             </div>

@@ -1,12 +1,11 @@
 import React from 'react';
-import html from '../images/html.png';
 import './Skill.css';
 
-function Skill() {
+function Skill({skillName,skillImage}) {
     return (
         <div className="skill">
-            <img src={html} alt="skill"/>
-            <p>HTML</p>
+            <img src={skillImage} alt="skill"/>
+            <p>{skillName}</p>
         </div>
     )
 }

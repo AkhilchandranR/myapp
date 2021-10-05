@@ -7,3 +7,9 @@
     margin-left: auto;
     margin-top: 80px;
 }
+.skills > h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 3px;
+}

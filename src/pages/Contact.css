@@ -4,11 +4,16 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    background-color: black;
+    background-image: url("../images/contact-background.jpg"); 
 }
 .contact__body{
     display: flex;
-    align-items: center;
-    width: 75vw;
+    width: 60vw;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.87;
 }
 .contact__about{
     flex: 0.5;
@@ -25,16 +30,55 @@
 .contact__form{
     flex: 0.5;
     padding: 40px;
+    background-color: white;
 }
 .contact__form > form{
     display: flex;
     flex-direction: column;
 }
-.contact__form > form > input,textarea{
-    margin-bottom: 20px;
+.form__inputs {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+.form__inputs > p{
+    margin-bottom: 10px;
+}
+.form__inputs > input{ 
     border: none;
-    border-bottom: 1px solid lightgray;
+}
+.message{
+    border: 1px solid grey;
+    height: 150px;
+}
+.form__inputs >input:focus{
+    outline: none;
 }
 .contact__form > h2{
     margin-bottom: 20px;
+}
+.contact__tools{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.contact__tools > img{
+    width: 60px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+.contact__form > form > button{
+    background-color: #11131f;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
