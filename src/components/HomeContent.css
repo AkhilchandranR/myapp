@@ -15,14 +15,14 @@
     color: white;
 }
 .homeContent__title > h1{
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
 }
 .homeContent__title > p{
     text-align: center;
-    font-size: 18px;
+    font-size: 1.5em;
     margin-top: 15px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .homeContent__contact{
     display: flex;
@@ -30,7 +30,7 @@
     justify-content: center;
     margin-top: 20px;
 }
-.homeContent__contact > button{
+.homeContent__contact > a > button{
     margin-top: 25px;
     padding: 10px 20px;
     font-size: 18px;
@@ -39,4 +39,9 @@
     border-radius: 5px;
     background: transparent;
     color: lightgray;
+    cursor: pointer;
+}
+.homeContent__contact > a > button:hover{
+    color: black;
+    background-color: lightgray;
 }

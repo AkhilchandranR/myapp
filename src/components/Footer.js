@@ -4,12 +4,20 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 function Footer() {
+    const scrollToTop = () =>{
+        window.scrollTo({
+            top:0,
+            left:0,
+            behavior:'smooth'
+        })
+    }
     return (
         <div className="footer">
             <div className="footer__links">
                 <GitHubIcon/>
             </div>
-            <button className="footer__scrollbtn">
+            <button className="footer__scrollbtn" 
+            onClick={scrollToTop}>
                 <ArrowUpwardIcon/>
             </button>
             <div className="footer__copyright">

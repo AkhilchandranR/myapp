@@ -1,19 +1,10 @@
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 95vw;
-    padding: 20px;
+    width: 100vw;
+    padding: 30px;
     position: fixed;
     color: white;
 }
-.header__menu > ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 23vw;
-    list-style-type: none;
-    margin-right: 10px;
-    font-weight: 700;
+.header > a{
+    text-decoration: none;
     color: white;
 }
