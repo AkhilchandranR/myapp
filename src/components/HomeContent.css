@@ -45,3 +45,8 @@
     color: black;
     background-color: lightgray;
 }
+@media screen and (max-width:420px) {
+    .homeContent__title > h1{
+        font-size: 3em;
+    }
+}

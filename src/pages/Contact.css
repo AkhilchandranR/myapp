@@ -4,6 +4,7 @@
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    overflow-y: scroll;
     background-color: black;
     background-image: url("../images/contact-background.jpg"); 
 }
@@ -14,6 +15,7 @@
     margin-left: auto;
     margin-right: auto;
     opacity: 0.87;
+    position: relative;
 }
 .contact__about{
     flex: 0.5;
@@ -87,6 +89,15 @@
     top: 0;
     left: 0;
     right: 0;
+}
+.contact__home{
+    position: absolute;
+    top: 40px;
+    font-size: 30px !important;
+}
+.contact__about > a{
+    color: white;
+    text-decoration: none;
 }
 @media screen and (max-width:991px) {
     .contact__body{

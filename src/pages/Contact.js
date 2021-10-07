@@ -4,6 +4,8 @@ import Pycharm from '../images/pycharm.png';
 import vscode from '../images/vscode.png';
 import Header from '../components/Header';
 import emailjs from 'emailjs-com'; 
+import HomeIcon from '@mui/icons-material/Home';
+import { Link } from 'react-router-dom';
 
 function Contact() {
     const[buttonValue,setButtonValue] = useState('Send Message');
@@ -24,6 +26,9 @@ function Contact() {
             <Header className="header"/>
             <div className="contact__body">
                 <div className="contact__about">
+                    <Link to="/">
+                        <HomeIcon className="contact__home"/>
+                    </Link>
                     <h2>About</h2>
                     <h5>Full Stack developer</h5>
                     <p>
