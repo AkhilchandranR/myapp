@@ -69,13 +69,18 @@
     object-fit: contain;
     margin-left: 10px;
 }
-.contact__form > form > button{
+.form__sendEmail{
     background-color: #11131f;
     border: none;
     padding: 10px 20px;
     color: white;
     border-radius: 5px;
     margin-top: 20px;
+}
+.form__sendEmail:hover{
+    background-color: white;
+    border: 1px solid #11131f;
+    color: #11131f;
 }
 .header{
     position: absolute;

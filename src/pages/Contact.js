@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
 import Pycharm from '../images/pycharm.png';
 import vscode from '../images/vscode.png';
 import Header from '../components/Header';
+import emailjs from 'emailjs-com'; 
 
 function Contact() {
+    const[buttonValue,setButtonValue] = useState('Send Message');
+    const sendMail = (e) =>{
+        e.preventDefault();
+        //this is set up using email js..
+        emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID,
+            process.env.REACT_APP_EMAIL_TEMPLATE_ID,
+            e.target,
+            process.env.REACT_APP_EMAIL_USER_ID)
+        .then(response=>console.log(response))
+        .catch(error=>console.log(error))
+        e.target.reset();
+    }
+
     return (
         <div className="contact">
             <Header className="header"/>
@@ -25,24 +39,24 @@ function Contact() {
                 </div>
                 <div className="contact__form">
                     <h2>Contact Me !.</h2>
-                    <form>
+                    <form onSubmit={sendMail}>
                         <div className="form__inputs">
                             <p>Your name*</p>
-                            <input type="text"/>
+                            <input type="text" name="name" required/>
                         </div>
                         <div className="form__inputs">
                             <p>Your email*</p>
-                            <input type="email"/>
+                            <input type="email" name="emailId" required/>
                         </div>
                         <div className="form__inputs">
                             <p>Your phone number</p>
-                            <input type="tel"/>
+                            <input type="tel" name="phone"/>
                         </div>
                         <p>Your message*</p>
                         <div className="form__inputs message">
-                            <input type="text"/>
+                            <input type="text" name="message" required/>
                         </div>
-                        <button>Send Message</button>
+                        <input type="submit" className="form__sendEmail" value={buttonValue}/>
                     </form>
                 </div>
             </div>
