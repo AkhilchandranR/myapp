@@ -6,16 +6,25 @@ import Areas from '../components/Areas';
 import Footer from '../components/Footer';
 import Projects from './Projects';
 import Skills from './Skills';
+import Flip from 'react-reveal/Flip';
+import Zoom from 'react-reveal/Zoom';
+import LightSpeed from 'react-reveal/LightSpeed';
 
 function HomePage() {
     return (
         <div className="homepage">
             <Header/>
             <HomeContent/>
-            <Areas/>
-            <Skills/>
+            <Zoom top>
+                <Areas/>
+            </Zoom>
+            <LightSpeed left>
+                <Skills/>
+            </LightSpeed>
             <Projects/>
-            <Footer/>
+            <Flip bottom>
+                <Footer/>
+            </Flip>
         </div>
     )
 }

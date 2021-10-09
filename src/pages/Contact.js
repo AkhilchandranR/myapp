@@ -6,6 +6,10 @@ import Header from '../components/Header';
 import emailjs from 'emailjs-com'; 
 import HomeIcon from '@mui/icons-material/Home';
 import { Link } from 'react-router-dom';
+import Slide from 'react-reveal/Slide';
+import Jump from 'react-reveal/Jump';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
     const[buttonValue,setButtonValue] = useState('Send Message');
@@ -16,8 +20,30 @@ function Contact() {
             process.env.REACT_APP_EMAIL_TEMPLATE_ID,
             e.target,
             process.env.REACT_APP_EMAIL_USER_ID)
-        .then(response=>console.log(response))
-        .catch(error=>console.log(error))
+        .then(response=>{
+            console.log(response)
+            toast.success('Thank you for visiting. I will get back to you soon.', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
+        })
+        .catch(error=>{
+            console.log(error);
+            toast.error('Sorry,message was not delivered. Please try again.', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
+        })
         e.target.reset();
     }
 
@@ -25,6 +51,18 @@ function Contact() {
         <div className="contact">
             <Header className="header"/>
             <div className="contact__body">
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
+                <Slide top>
                 <div className="contact__about">
                     <Link to="/">
                         <HomeIcon className="contact__home"/>
@@ -42,8 +80,12 @@ function Contact() {
                         <img src={Pycharm} alt="pycharm"/>
                     </div>
                 </div>
+                </Slide>
+                <Slide bottom>
                 <div className="contact__form">
-                    <h2>Contact Me !.</h2>
+                    <Jump delay={1000}>
+                        <h2>Contact Me !.</h2>
+                    </Jump>
                     <form onSubmit={sendMail}>
                         <div className="form__inputs">
                             <p>Your name*</p>
@@ -64,6 +106,7 @@ function Contact() {
                         <input type="submit" className="form__sendEmail" value={buttonValue}/>
                     </form>
                 </div>
+                </Slide>
             </div>
         </div>
     )

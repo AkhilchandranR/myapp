@@ -10,27 +10,45 @@
     width: 100vw;
     display: grid;
     place-items: center ;
+
+    /* animations */
+    animation-name: reveal;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
 }
+@keyframes reveal{
+    0%{
+        width: 100vw;
+    }
+    100%{
+        width: 0vw;
+    }
+}
+
 .homeContent__title{
     color: white;
 }
-.homeContent__title > h1{
+.homeContent__heading{
     font-size: 4em;
     text-align: center;
 }
-.homeContent__title > p{
+.homeContent__caption{
     text-align: center;
     font-size: 1.5em;
     margin-top: 15px;
     font-weight: 600;
 }
+
 .homeContent__contact{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
 }
-.homeContent__contact > a > button{
+.homeContent__btn{
     margin-top: 25px;
     padding: 10px 20px;
     font-size: 18px;
@@ -41,7 +59,7 @@
     color: lightgray;
     cursor: pointer;
 }
-.homeContent__contact > a > button:hover{
+.homeContent__btn:hover{
     color: black;
     background-color: lightgray;
 }
