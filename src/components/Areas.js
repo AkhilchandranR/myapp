@@ -48,7 +48,7 @@ function Areas() {
                 <div className="card__description">
                 Buliding behind the scenes functionality from the details understood and learned 
                 from the research . Buliding all the necessary apis and other functionalities.
-                I use Django ,which is a python based framework .
+                I use Django or Nodejs/express for building this.
                 </div>
             </div>
             </div>            

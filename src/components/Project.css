@@ -17,6 +17,13 @@
 .project__description{
     margin-left: 15px;
 }
+.project__description > a > p{
+    margin-top: 15px;
+}
+.project__linkNotAvailable{
+    margin-top: 15px;
+    color: grey;
+}
 @media screen and (max-width: 769px) {
     .project__color{
         display: none;
