@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
@@ -11,10 +12,13 @@ function Footer() {
             behavior:'smooth'
         })
     }
+    const openGithub = () =>{
+        window.open('https://github.com/AkhilchandranR','_blank');
+    }
     return (
         <div className="footer">
             <div className="footer__links">
-                <GitHubIcon/>
+                <GitHubIcon onClick={openGithub}/>
             </div>
             <button className="footer__scrollbtn" 
             onClick={scrollToTop}>

@@ -11,6 +11,7 @@
     margin-top: 20px;
     font-size: 3rem;
     color: antiquewhite;
+    cursor: pointer;
 }
 .footer__scrollbtn{
     color: antiquewhite;
