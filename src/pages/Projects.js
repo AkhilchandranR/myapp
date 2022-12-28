@@ -5,6 +5,7 @@ import mark from '../images/mark.png';
 import covid from '../images/covid.jpeg';
 import catchweight from '../images/catchweight.png';
 import stanbets from '../images/stanbets.png';
+import service from '../images/service.png';
 import Bounce from 'react-reveal/Bounce';
 
 
@@ -52,6 +53,16 @@ function Projects() {
                         projectDescription="Covid 19 tracker gives the real time data of covid cases across the world.
                         You can filter according to the countries or states of your choice.
                         A graphical representation of data is available as a map and a line graph."/>
+                </Bounce>
+            </div>
+            <div className="projects__left">
+                <Bounce left>
+                    <Project 
+                    projectName="Service Pack AI"
+                    projectImage={service}
+                    projectDescription="This is a landing website for a service based web development company. This is their 
+                    company main websie. This Showcases all the services they provide. Link is provided below."
+                    projectLink="https://www.servicepack.ai/"/>
                 </Bounce>
             </div>   
         </div>

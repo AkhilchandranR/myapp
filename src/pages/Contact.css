@@ -30,6 +30,11 @@
 .contact__about > h5{
     margin-bottom: 30px;
 }
+.contact__about > p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: beige;
+} 
 .contact__form{
     flex: 0.5;
     padding: 40px;

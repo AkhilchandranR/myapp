@@ -17,6 +17,11 @@
 .project__description{
     margin-left: 15px;
 }
+.project__description > p{
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    margin-top: 1rem;
+}
 .project__description > a > p{
     margin-top: 15px;
 }
