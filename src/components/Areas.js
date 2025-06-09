@@ -7,7 +7,7 @@ import Backend from '../images/backend.png';
 function Areas() {
     return (
         <div className="areas">
-            <div className="areas__heading">
+            <div className="areas__heading headings">
                 <h1>SERVICES</h1>
             </div>
             <div className="areas__cardarea">

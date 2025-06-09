@@ -18,7 +18,9 @@ import firebase from '../images/firebase.png';
 function Skills() {
     return (
         <div className="skills">
-            <h1>SKILLS</h1>
+            <div className='headings'>
+                <h1>SKILLS</h1>
+            </div>
             <div className="skills__row1">
                 <Skill skillImage={html} skillName="HTML"/>
                 <Skill skillImage={css} skillName="CSS"/>

@@ -37,12 +37,23 @@
     justify-content: center;
     margin-top: 100px;
 }
+/* .areas__heading {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #337ab7;
+    border-radius: 30px;
+    padding: 8px 16px;
+    background-color: transparent;
+    box-shadow: 0 0 8px #337ab7, 0 0 16px #337ab7;
+}
 .areas__heading > h1{
     text-align: center;
-    text-decoration: underline;
-    text-decoration-style: double;
-    text-decoration-thickness: 3px;
-}
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #337ab7;
+    text-shadow: 0 0 2px #337ab7, 0 0 4px #337ab7;
+} */
 @media screen and (max-width: 1100px){
     .card__description{
         width: 250px;

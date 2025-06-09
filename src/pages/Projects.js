@@ -12,7 +12,9 @@ import Bounce from 'react-reveal/Bounce';
 function Projects() {
     return (
         <div className="projects">
-            <h1>DEMO PROJECTS</h1>
+            <div className='headings'>
+                <h1>DEMO PROJECTS</h1>
+            </div>
             <div className="projects__left">
                 <Bounce left>
                     <Project 
