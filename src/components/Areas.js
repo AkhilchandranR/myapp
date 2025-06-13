@@ -1,15 +1,76 @@
 import React from 'react';
 import './Areas.css';
-import Research from '../images/research.png';
-import Frontend from '../images/front-end.png';
-import Backend from '../images/backend.png';
+import Research from '../images/research.jpg';
+import Frontend from '../images/fedev.jpg';
+import Backend from '../images/bedev.png';
+import Maintenance from '../images/maint.webp';
+import { Image } from '@mui/icons-material';
 
 function Areas() {
     return (
         <div className="areas">
             <div className="areas__heading headings">
-                <h1>SERVICES</h1>
+                <h1>Services</h1>
             </div>
+            <div className='container areas__cardarea'>
+                <div className='areas__card'>
+                    <div className='card__textarea'>
+                        <div className='card__heading'>
+                            <h2>Research</h2>
+                        </div>
+                        <div className='card__description'>
+                            Understand the subject matter completely and build on the knowledge related to it,
+                            becoming familiar with the subject matter. Determine methods to address the specific needs and requirements.
+                        </div>
+                    </div>
+                    <div className='card__image'>
+                        <img src={Research} alt="research-icon" />
+                    </div>
+                </div>
+                <div className='areas__card'>
+                    <div className='card__textarea'>
+                        <div className='card__heading'>
+                            <h2>Frontend development</h2>
+                        </div>
+                        <div className='card__description'>
+                            Understand the subject matter completely and build on the knowledge related to it,
+                            becoming familiar with the subject matter. Determine methods to address the specific needs and requirements.
+                        </div>
+                    </div>
+                    <div className='card__image'>
+                        <img src={Frontend} alt="frontend-icon" />
+                    </div>
+                </div>
+                <div className='areas__card'>
+                    <div className='card__textarea'>
+                        <div className='card__heading'>
+                            <h2>Backend development</h2>
+                        </div>
+                        <div className='card__description'>
+                            Understand the subject matter completely and build on the knowledge related to it,
+                            becoming familiar with the subject matter. Determine methods to address the specific needs and requirements.
+                        </div>
+                    </div>
+                    <div className='card__image' style={{ background: 'linear-gradient(135deg, #002f33, #000f11)' }}>
+                        <img src={Backend} alt="backend-icon" style={{ height: '380px', objectFit: 'contain' }}/>
+                    </div>
+                </div>
+                <div className='areas__card'>
+                    <div className='card__textarea'>
+                        <div className='card__heading'>
+                            <h2>Maintenace and Support</h2>
+                        </div>
+                        <div className='card__description'>
+                            Understand the subject matter completely and build on the knowledge related to it,
+                            becoming familiar with the subject matter. Determine methods to address the specific needs and requirements.
+                        </div>
+                    </div>
+                    <div className='card__image'>
+                        <img src={Maintenance} alt="maintenance-icon" />
+                    </div>
+                </div>
+            </div>
+            {/*
             <div className="areas__cardarea">
             <div className="areas__card">
                 <div className="card__image">
@@ -51,7 +112,7 @@ function Areas() {
                 I use Django or Nodejs/express for building this.
                 </div>
             </div>
-            </div>            
+            </div>             */}
         </div>
     )
 }
