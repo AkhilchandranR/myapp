@@ -7,6 +7,7 @@ import catchweight from '../images/catchweight.png';
 import stanbets from '../images/stanbets.png';
 import service from '../images/service.png';
 import Bounce from 'react-reveal/Bounce';
+import ProjectCard from '../components/ProjectCard';
 
 
 function Projects() {
@@ -15,7 +16,7 @@ function Projects() {
             <div className='headings'>
                 <h1>DEMO PROJECTS</h1>
             </div>
-            <div className="projects__left">
+            {/* <div className="projects__left">
                 <Bounce left>
                     <Project 
                         projectName="Catchweight ERP"
@@ -66,7 +67,33 @@ function Projects() {
                     company main websie. This Showcases all the services they provide. Link is provided below."
                     projectLink="https://www.servicepack.ai/"/>
                 </Bounce>
-            </div>   
+            </div> */}
+            <div className='project__cards'>
+                <div className='project__card'>
+                    <ProjectCard />
+                </div>
+                <div className='project__card'>
+                    <ProjectCard />
+                </div>
+                <div className='project__card'>
+                    <ProjectCard />
+                </div>
+                <div className='project__card'>
+                    <ProjectCard />
+                </div>
+                <div className='project__card'>
+                    <ProjectCard />
+                </div>
+                <div className='project__card'>
+                    <ProjectCard />
+                </div>
+                <div className='project__card'>
+                    <ProjectCard />
+                </div>
+                <div className='project__card'>
+                    <ProjectCard />
+                </div>
+            </div>
         </div>
     )
 }

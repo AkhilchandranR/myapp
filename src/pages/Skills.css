@@ -1,6 +1,5 @@
 .skills{
-    margin-top: 100px;
-    margin-bottom: 150px;
+    padding: 100px 0;
 }
 .skills__row1{
     display: flex;
